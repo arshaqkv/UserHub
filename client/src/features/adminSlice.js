@@ -59,8 +59,8 @@ export const fetchUserDetails = createAsyncThunk(
 );
 
 //Add new User
-export const createUser = createAsyncThunk(
-    "admin/createUser",
+export const addUser = createAsyncThunk(
+    "admin/aser",
     async(userData, thunkAPI) =>{
         try {
             console.log(userData)
@@ -166,14 +166,14 @@ const adminSlice = createSlice({
             })
 
             //Add new User
-            .addCase(createUser.pending, (state) =>{
+            .addCase(addUser.pending, (state) =>{
                 state.loading = true
                 state.error = null
             })
-            .addCase(createUser.fulfilled, (state) =>{
+            .addCase(addUser.fulfilled, (state) =>{
                 state.loading = false
             })
-            .addCase(createUser.rejected, (state, action) =>{
+            .addCase(addUser.rejected, (state, action) =>{
                 state.loading = false
                 state.error = action.payload
             })
