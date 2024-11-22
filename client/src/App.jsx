@@ -8,7 +8,7 @@ import ProtectedRoute from './components/ProtectedRoute'
 import AdminDashboard from './pages/AdminDashboard'
 import AdminLogin from './pages/AdminLogin'
 import EditUser from './pages/EditUser'
-import CreateUser from './pages/createUser'
+import CreateUser from './pages/CreateUser'
 
 
 
