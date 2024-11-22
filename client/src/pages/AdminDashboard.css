@@ -1,0 +1,112 @@
+/* AdminDashboard.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f5f7;
+}
+
+.admin-dashboard {
+    display: flex;
+    min-height: 100vh;
+    
+}
+
+
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.main-content header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-content h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.search-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.add-user-link{
+    text-decoration: none;
+    background: #c0c7cf;
+    color: black;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Table */
+.user-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+}
+
+.user-list th, .user-list td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.user-list th {
+    background-color: #f8f9fa;
+}
+
+.user-list tr:hover {
+    background-color: #f1f1f1;
+}
+
+.user-list .btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.user-list .btn-edit {
+    background-color: #0c4b75;
+    margin-right: 10px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.user-list .btn-delete {
+    background-color: #e74c3c;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Profile Image */
+.profile-image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* No Users */
+.no-users {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+}
+
+/* Spinner */

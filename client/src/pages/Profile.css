@@ -1,0 +1,123 @@
+/* Profile container */
+.logo-div h1{
+  color: #56475b;
+  font-family:sans-serif;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: #f4f7fc; */
+    padding: 20px;
+  }
+  
+  .profile-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  /* Profile image */
+  .profile-img-container {
+    margin-bottom: 20px;
+  }
+  
+  .profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #270e2e;
+  }
+  
+  /* Username and Email */
+  .profile-username {
+    font-size: 24px;
+    color: #270e2e;
+    margin-bottom: 10px;
+  }
+  
+  .profile-email {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  /* Upload section */
+  .upload-section {
+    margin-bottom: 20px;
+  }
+  
+  .file-input {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .upload-btn {
+    padding: 10px 20px;
+    background-color: #3b5998;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .upload-btn:disabled {
+    background-color: #abadb0;
+    cursor: not-allowed;
+  }
+  
+  .upload-btn:hover:not(:disabled) {
+    background-color: #2e477d;
+  }
+  
+  /* Logout Button */
+  .logout-btn {
+    padding: 10px 20px;
+    background-color: #6c4d64;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .logout-btn:hover {
+    background-color: #c0392b;
+  }
+
+ 
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .profile-card {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .profile-img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .profile-username {
+      font-size: 20px;
+    }
+  
+    .profile-email {
+      font-size: 14px;
+    }
+  
+    .upload-btn,
+    .logout-btn {
+      width: 100%;
+    }
+  }
+  
