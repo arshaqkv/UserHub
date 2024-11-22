@@ -6,7 +6,7 @@ import Login from './pages/Login'
 import Profile from './pages/Profile'
 import ProtectedRoute from './components/ProtectedRoute'
 import AdminDashboard from './pages/AdminDashboard'
-import AdminLogin from './pages/adminLogin'
+import AdminLogin from './pages/AdminLogin'
 import EditUser from './pages/EditUser'
 import CreateUser from './pages/createUser'
 
